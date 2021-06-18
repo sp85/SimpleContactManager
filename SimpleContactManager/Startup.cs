@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using SimpleContactManager.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace SimpleContactManager
 {
@@ -23,6 +25,9 @@ namespace SimpleContactManager
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddDbContext<ContactContext>(options =>
+               options.UseSqlServer(Configuration.GetConnectionString("ContactConnection")));
             services.AddControllersWithViews();
         }
 
