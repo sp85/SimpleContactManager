@@ -14,6 +14,6 @@ namespace SimpleContactManager.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         [ForeignKey ("email")]
-        public EmailAddress EmailAddress { get; set; }
+        public string EmailAddress { get; set; }
     }
 }

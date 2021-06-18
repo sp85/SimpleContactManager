@@ -8,6 +8,13 @@ namespace SimpleContactManager.Models
 {
     public class EmailAddress
     {
+        
+        //public EmailAddress (string name)
+        //{
+        //    email = name;
+
+        //}
+        
         [Key]
         public int emailID  { get; set; }
         public bType? bType { get; set; }

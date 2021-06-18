@@ -17,12 +17,11 @@ namespace SimpleContactManager.Data
             {
                 return;
             }
-           // EmailAddress e1 = new EmailAddress("sp@gmail.com");
             var contacts = new Contacts[]
             {
-                new Contacts{FirstName="s",LastName="p"},
-                new Contacts{FirstName="a",LastName="p"},
-                new Contacts{FirstName="m",LastName="p"}
+                new Contacts{FirstName="s",LastName="p",EmailAddress="sp@gmail.com"},
+                new Contacts{FirstName="a",LastName="p",EmailAddress="ap@gmail.com"},
+                new Contacts{FirstName="m",LastName="p",EmailAddress="mp@gmail.com"}
             };
             foreach (Contacts c in contacts )
             {
@@ -32,9 +31,9 @@ namespace SimpleContactManager.Data
 
             var emailaddress = new EmailAddress[]
           {
-                new EmailAddress("sp@gmail.com"),
-                new EmailAddress("ap@gmail.com"),
-                new EmailAddress("mp@gmail.com")
+                new EmailAddress{email="sp@gmail.com"},
+                new EmailAddress{email="ap@gmail.com"},
+                new EmailAddress{email="mp@gmail.com"}
           };
             foreach (EmailAddress e in emailaddress)
             {
