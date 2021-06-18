@@ -27,7 +27,7 @@ namespace SimpleContactManager
         {
 
             services.AddDbContext<ContactContext>(options =>
-               options.UseSqlServer(Configuration.GetConnectionString("ContactConnection")));
+               options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllersWithViews();
         }
 

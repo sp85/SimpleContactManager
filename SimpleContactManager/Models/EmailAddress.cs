@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,8 +8,10 @@ namespace SimpleContactManager.Models
 {
     public class EmailAddress
     {
+        [Key]
+        public int emailID  { get; set; }
         public bType? bType { get; set; }
-
+    
         public string email { get; set; }
 
     }
